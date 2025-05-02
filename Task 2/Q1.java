@@ -1,0 +1,24 @@
+// Write a method to print all odd numbers from 1 to a given number n
+
+import java.util.Scanner;
+
+public class Q1 {
+    public static void odd(int n) {
+        for (int i = 1; i <=n; i++) {
+            if (i % 2 !=0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        odd(num);
+
+        scanner.close();
+    }
+}
