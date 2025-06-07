@@ -1,7 +1,6 @@
+// Create a method to print the multiplication tables from 1 to 10
 
 import java.util.Scanner;
-
-// Create a method to print the multiplication tables from 1 to 10
 
 public class Q13 {
     public static void table(int n) {
