@@ -1,0 +1,90 @@
+1. Which of the following is the correct way to declare and initialize an integer array in Java?
+○ int[] arr = new int();
+○ int arr[] = {1, 2, 3};
+○ array arr = new int[3];
+○ int arr = [1, 2, 3];
+--> int arr[] = {1, 2, 3};
+
+
+2. What is the output of the following code?
+int a = 5, b = 2;
+System.out.println(a / b);
+○ 2
+○ 2.5
+○ 2.0
+○ Compilation Error
+--> 2
+
+3. Which of these allows a class to inherit from another class?
+○ extends
+○ implements
+○ inherits
+○ instanceOf
+--> extends
+
+4. Which access modifier makes a method accessible from any other class?
+○ private
+○ protected
+○ default
+○ public
+--> public
+
+5. Which of the following is not a feature of object-oriented programming?
+○ Inheritance
+○ Encapsulation
+○ Compilation
+○ Polymorphism
+--> Compilation
+
+6. What is method overriding?
+○ Defining multiple methods with the same name in the same class
+○ Changing the return type of a method
+○ Defining a method in a subclass that already exists in the parent class
+○ Using static methods to replace instance methods
+--> Defining a method in a subclass that already exists in the parent class
+
+7. What will be printed?
+int x = 7;
+System.out.println(++x);
+○ 6
+○ 7
+○ 8
+○ Error
+--> 8
+
+8. Which of these data types is used to represent a single character in Java?
+○ string
+○ char
+○ character
+○ byte
+--> char
+
+9. What will the following expression return?
+"Java".length()
+○ 3
+○ 4
+○ 5
+○ Compilation Error
+--> 4
+
+10. Which of the following best describes encapsulation?
+○ Writing long code in a single class
+○ Separating UI from logic
+○ Hiding implementation details and exposing only necessary parts
+○ Using only public variables
+--> Hiding implementation details and exposing only necessary parts
+
+
+11. Which Java keyword is used to inherit from an interface?
+○ extends
+○ implements
+○ inherit
+○ include
+--> implements
+
+12. Which loop is guaranteed to execute at least once?
+○ for
+○ while
+○ do-while
+○ foreach
+--> do-while

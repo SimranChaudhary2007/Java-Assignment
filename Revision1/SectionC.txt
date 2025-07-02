@@ -1,0 +1,30 @@
+Answer any 4 short notes (2 marks each)
+a) Java class and object
+b) Constructor overloading
+c) Access modifiers
+d) Importance of the main method
+e) Logical operators in Java
+
+a) Java class and object
+    In Java, a class is a blueprint that defines attributes and methods, while an object is an instance of the class that holds actual data 
+and behaviors. For example, a Car class may have fields like color and methods like drive(), and when you create Car c = new Car();, c becomes 
+an object with its own data.
+
+b) Constructor overloading
+    Constructor overloading means having multiple constructors in the same class with different parameter lists. It allows creating objects in 
+different ways with various initial values, increasing flexibility while initializing objects in Java.
+
+c) Access modifiers
+    Access modifiers control the visibility of classes, variables, and methods in Java. public allows access from anywhere, private restricts 
+access to within the same class, protected allows access within the package and subclasses, while the default modifier limits access within the 
+package.
+
+d) Importance of the main method
+    The main method is the entry point of every Java program, defined as public static void main(String[] args). It allows the JVM to start program 
+execution, and without it, a Java program cannot run.
+
+e) Logical Operators in Java
+    Logical operators in Java are used to combine boolean expressions. These include && (AND), || (OR), and ! (NOT), helping in decision-making by 
+evaluating multiple conditions together in control statements.
+Eg:
+if (a > 0 && b > 0) { } // true if both a and b > 0

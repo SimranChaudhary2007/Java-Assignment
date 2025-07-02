@@ -1,0 +1,85 @@
+1. Explain method overloading in Java with examples. How is it different from method overriding?
+    Method overloading is when multiple methods in the same class have the same name but different parameters (different type, number, or 
+order of parameters). It allows methods to perform similar tasks with different inputs.
+Eg;
+public class Calculator {
+
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(2, 3));
+        System.out.println(calc.add(2, 3, 4));
+        System.out.println(calc.add(2.5, 3.5));
+    }
+}
+
+    Its different from overriding by the following ways:
+
+Overloading
+- Same method name, different parameters in the same class
+- Not related to inheritance
+- Increases readability, handles different input types
+- Resolved at compile-time (static binding)
+
+Overriding
+- Same method signature in subclass as in the parent class
+- Requires inheritance
+- Provides specific implementation of a parent method
+- Resolved at runtime (dynamic binding)
+
+2. What is the role of the super keyword in Java? Demonstrate its usage with a code example.
+    The super keyword in Java refers to the immediate parent class object. It is used for:
+- Accessing parent class variables (fields) when they are hidden by child class variables.
+- Calling parent class methods that are overridden in the child class.
+- Calling the parent class constructor explicitly.
+Eg: 
+class Animal {
+    String name = "Animal";
+
+    Animal() {
+        System.out.println("Animal constructor called");
+    }
+
+    void display() {
+        System.out.println("This is an animal");
+    }
+}
+
+class Dog extends Animal {
+    String name = "Dog";
+
+    Dog() {
+        super();
+        System.out.println("Dog constructor called");
+    }
+
+    void printNames() {
+        System.out.println("Child name: " + name);
+        System.out.println("Parent name: " + super.name);
+    }
+
+    @Override
+    void display() {
+        super.display();
+        System.out.println("This is a dog");
+    }
+}
+
+public class TestSuper {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.printNames();
+        d.display();
+    }
+}
