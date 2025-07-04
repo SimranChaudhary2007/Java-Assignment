@@ -1,0 +1,28 @@
+Answer any 4 short notes (2 marks each)
+a) Object class in Java
+b) Keywords break vs continue
+c) Role of access modifiers
+d) Use of instanceof operator
+e) Difference between class and interface
+
+b) Keywords break vs continue
+    The break and continue keywords are used to control loop flow. The break keyword is used to immediately terminate a loop or a switch statement, 
+transferring control to the statement after the loop or switch. On the other hand, the continue keyword skips the current iteration of the loop and 
+moves control to the next iteration, allowing the loop to continue executing without completing the current cycle. Both keywords help manage loop 
+execution effectively.
+
+c) Role of access modifiers
+    Access modifiers in Java define the visibility and accessibility of classes, methods, and variables in a program, helping in encapsulation 
+and security. The four access modifiers are private, default, protected, and public. A private member is accessible only within 
+its class, default allows access within the same package, protected allows access within the same package and subclasses, and public allows access 
+from any class. This helps manage controlled access to data and methods in Java.
+
+d) Use of instanceof operator
+    The instanceof operator in Java is used to check whether a given object is an instance of a specific class or implements a particular interface,
+returning true if it matches and false otherwise. It is useful for type checking before casting objects, which helps prevent ClassCastException at 
+runtime. This operator is often used in polymorphic scenarios, where objects of different subclasses are handled, to ensure that the object is 
+safely cast to its intended type.
+
+e) Difference between class and interface
+    A class can have fields and method implementations and is used to create objects, while an interface contains abstract methods and cannot create 
+objects. A class supports single inheritance, while interfaces allow multiple inheritance in Java.

@@ -1,0 +1,100 @@
+1. Define encapsulation. How is it implemented in Java? Provide an example using getter and setter methods.
+    Encapslation is the process of wrapping data(variable) and method(function) together within a single unit(class) while restricting direct 
+access to the data from outside the class. 
+It is implemented in Java by the following ways:
+- Protects data by using private varibles
+- Provides public setter and getter methods to access and update private data safely
+- Helps in data hiding, maintaining controll over the data
+- Incearse security, maintainability and flexibility of the code
+Eg:
+public class Student{
+    private String name;
+    private int id;
+
+    public Student(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+
+    // setter
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+
+    // getter
+    public String getName(){
+        return name;
+    }
+    public int getId(){
+        return id;
+    }
+
+    public void displayinfo(){
+        System.out.println("Name : " + getName());
+        System.out.println("ID : " + getId());
+    }
+}
+
+class Studentimp{
+    public static void main(String[] args) {
+        Student s1 = new Student("Simran", 240751);
+
+        s1.displayinfo();
+    }
+}
+
+2. Explain the concept of constructor chaining in Java. Demonstrate it using the this() keyword with code.
+    Constructor chaining is a mechanism where one constructor calls another constructor of the same class or parent class to reuse initialization 
+code and avoid duplication.
+Eg:
+public class Student {
+    private String name;
+    private int age;
+    private String course;
+
+    public Student() {
+        System.out.println("Default constructor called.");
+    }
+
+    public Student(String name) {
+        this.name = name;
+        System.out.println("Constructor with name called.");
+    }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("Constructor with name and age called.");
+    }
+
+    public Student(String name, int age, String course) {
+        this.name = name;
+        this.age = age;
+        this.course = course;
+        System.out.println("Constructor with name, age, and course called.");
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age + ", Course: " + course);
+    }
+}
+
+class StudentImp {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.display();
+
+        Student s2 = new Student("Simran");
+        s2.display();
+
+        Student s3 = new Student("Simran", 18);
+        s3.display();
+
+        Student s4 = new Student("Simran", 18, "OOP");
+        s4.display();
+    }
+}
+

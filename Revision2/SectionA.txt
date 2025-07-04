@@ -1,0 +1,89 @@
+1. Which of the following keywords is used to define a subclass in Java?
+○ derives
+○ inherits
+○ extends
+○ subclass
+--> extends
+
+2. What is the output of the following?
+int x = 3;
+x *= 2 + 5;
+System.out.println(x);
+○ 21
+○ 16
+○ 10
+○ 11
+--> 21
+
+3. What does the term "object" refer to in object-oriented programming?
+○ A primitive data type
+○ A method
+○ An instance of a class
+○ A return type
+--> An instance of a class
+
+4. Which operator is used to compare two values for equality?
+○ =
+○ ==
+○ !=
+○ equals()
+--> ==
+
+5. What does the break statement do in Java loops?
+○ Skips the next iteration
+○ Exits the current method
+○ Exits the loop entirely
+○ Continues to the next loop
+--> Exits the loop entirely
+
+6. Which of the following is a valid method signature in Java?
+○ void method(int x)
+○ int method x()
+○ void method = int()
+○ method void(int x)
+--> void method(int x)
+
+7. What is printed by the following?
+int[] arr = {2, 4, 6};
+System.out.println(arr.length);
+○ 2
+○ 3
+○ 6
+○ Error
+--> 3
+
+8. Which of the following correctly defines an interface in Java?
+○ class InterfaceName {}
+○ interface InterfaceName {}
+○ public class InterfaceName()
+○ abstract InterfaceName {}
+--> interface InterfaceName {}
+
+9. In Java, how is memory allocated for an object?
+○ Stack memory
+○ Heap memory
+○ Static memory
+○ Constant pool
+--> Heap memory
+
+10. Which concept allows code reuse in OOP?
+○ Abstraction
+○ Encapsulation
+○ Inheritance
+○ Association
+--> Inheritance
+
+11. What does the return keyword do in a method?
+○ Terminates program execution
+○ Exits the method and optionally returns a value
+○ Calls another method
+○ Initializes variables
+--> Exits the method and optionally returns a value
+
+12. What is the result of this expression?
+System.out.println("Java" + 10 + 5);
+○ Java105
+○ Java15
+○ 15Java
+○ Error
+--> Java105
